@@ -1,103 +1,63 @@
 import 'package:flutter/material.dart';
+import 'quote.dart';
 
 void main() => runApp(MaterialApp(
-      home: NinjaCard(),
+      home: QuoteList(),
     ));
 
-class NinjaCard extends StatefulWidget {
+class QuoteList extends StatefulWidget {
   @override
-  State<NinjaCard> createState() => _NinjaCardState();
+  State<QuoteList> createState() => _QuoteListState();
 }
 
-class _NinjaCardState extends State<NinjaCard> {
-  int ninjaLevel = 0;
+class _QuoteListState extends State<QuoteList> {
+  List<Quote> quotes = [
+    Quote(author: 'Anapi', text: "1 hour more and done!"),
+    Quote(author: 'Kana', text: 'Ya hochu kushat'),
+  ];
+
+  Widget quoteTemplate(quote) {
+    return Card(
+      margin: EdgeInsets.fromLTRB(16, 16, 16, 0),
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Text(
+              quote.text,
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.grey[600],
+              ),
+            ),
+            SizedBox(height: 6),
+            Text(
+              quote.author,
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey[800],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[900],
-        appBar: AppBar(
-          title: Text('Ninja ID'),
-          centerTitle: true,
-          backgroundColor: Colors.pink[100],
-          elevation: 0,
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            //triggers the build function
-            setState(() {
-              ninjaLevel += 1;
-            });
-          },
-          child: Icon(Icons.add),
-          backgroundColor: Colors.pink.shade100,
-        ),
-        body: Padding(
-            padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Center(
-                  child: CircleAvatar(
-                    backgroundImage: AssetImage('assets/whale.png'),
-                    backgroundColor: Colors.white,
-                    radius: 40,
-                  ),
-                ),
-                Divider(
-                  height: 80,
-                  color: Colors.grey[800],
-                ),
-                Text(
-                  'NAME',
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 2,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'Aiaru',
-                  style: TextStyle(
-                    color: Colors.amberAccent,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 2,
-                    fontSize: 28,
-                  ),
-                ),
-                SizedBox(height: 30),
-                Text(
-                  'CURRENT NINJA LEVEL',
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 2,
-                  ),
-                ),
-                Text(
-                  '$ninjaLevel',
-                  style: TextStyle(
-                    color: Colors.amberAccent,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 2,
-                    fontSize: 28,
-                  ),
-                ),
-                SizedBox(height: 30),
-                Row(
-                  children: <Widget>[
-                    Icon(Icons.email, color: Colors.grey),
-                    SizedBox(width: 10),
-                    Text('aiaru@betweenbits.io',
-                        style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 18,
-                          letterSpacing: 1,
-                        )),
-                  ],
-                )
-              ],
-            )));
+      backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        title: Text('Awesome Quotes'),
+        centerTitle: true,
+        backgroundColor: Colors.redAccent,
+        elevation: 0,
+      ),
+      body: Column(
+        children: quotes.map((quote) => quoteTemplate(quote)).toList(),
+      ),
+    );
   }
 }
