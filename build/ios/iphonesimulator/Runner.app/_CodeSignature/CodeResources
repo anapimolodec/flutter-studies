@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		g83HA10VXbq+fcPPzwcFKBzr7gU=
+		DZK457jh/giluYO2KwZ2tTagUoM=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		/sRMudleDKcKj/Efy1sd5zg2KIY=
+		8+0Sj/9r6WGzydrOwGcLCcmpqWY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		RIAilnlOaIQ4G5me//hYHoX0dxY=
+		6ic/o9dThpfJzZur+QDijinxipc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/whale.png</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		Km7meLlHr348XfabtoikgZFUjYg=
+		s8q3hD6iXTZDAJcy2j7kjH3C2Q0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -269,7 +269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tj5WsNWlM90wbwDC6UwPOtY4hiK48dPY2I+xN+wYiwI=
+			4+anPhimPE16BqMsHAC5VLxKr6CIVwVsrJkSy8srT8Y=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -283,7 +283,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pnVT2eY84g0EiXlvoXa5gEyN/14kOIDNdCZOtr5Mz7I=
+			ZQm5j771x+pG45Cu94NdHHenNT5h+SHJyWyhIQml8m4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -311,7 +311,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C4szPdS0AD7JLMyAxOIXKRO6ASL7TphOPzbz+/rCD8o=
+			fw7Y4sArpJSYVG4lHrU/MwCd8mCLg+uHXnPgHf4y2bo=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/whale.png</key>
@@ -339,7 +339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			THve+qzdYRlR1XyJ2PZATwb3m0v6I73EDoUrKR1oR7w=
+			0QGMmhXh8jp7EiK56kAoQFBows1XgdBbMabRDEH3u4o=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
