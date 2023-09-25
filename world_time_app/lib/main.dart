@@ -5,7 +5,7 @@ import 'package:world_time_app/pages/choose_location.dart';
 //no need to specify lib folder
 
 void main() {
-  runApp(MaterialApp(initialRoute: '/home', routes: {
+  runApp(MaterialApp(initialRoute: '/', routes: {
     '/': (context) => Loading(),
     '/home': (context) => Home(),
     '/location': (context) => ChooseLocation(),
