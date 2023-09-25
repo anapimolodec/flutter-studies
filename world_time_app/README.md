@@ -1,6 +1,8 @@
 # world_time_app
 
-A new Flutter project.
+This is a follow-along with this [tutorial](https://youtu.be/bKueYVtV0eA?si=ymuTa0a6EehVTwFV). 
+
+Simple App which fetches the World Time from API and user can click a location and see the updated time.
 
 ## Getting Started
 
